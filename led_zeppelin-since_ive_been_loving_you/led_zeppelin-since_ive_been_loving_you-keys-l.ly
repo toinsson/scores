@@ -37,9 +37,9 @@ left = \relative c, {
   f2. | aes4 bes c | f,2.~ | f4 g bes | c2.~
   c | c | g | c,~ | c | c~ | c2 e4
   f2.~ | f2 c4 | f2. | aes4 bes2 | f2.~ | f
-  f2.~ | f4 aes4 bes4 | c2 c4 | bes aes g~ | g2 f4
-  ees4	 d c~ | c2 c4 | \repeat unfold 2 { d'8[ b] c[ b] c b } | d8[ b] c b c4
-  g2 g4 | g d f | g2 g8 g | g4 g g | aes2 bes4 | aes2 g4
+  f2.~ | f4 aes4 bes4 | c2. | bes4 aes g~ | g2 f4
+  ees4	d c~ | c2. | c2. | c'4 b bes | b4 c8 b c4
+  g8 f8~ f2 | g4 d f | g2. | g4 g g | aes2 bes4 | aes2 g4
   f2 g4 | f2 g4 | ees2. | d | c | ees
   d2. | d2. | des2. | des2.
   % 48 bars
