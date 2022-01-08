@@ -14,21 +14,18 @@
   <<
     \new ChordNames \chordNames
     \new FretBoards \chordNames
-    \new Staff \with { 
+    \new Staff \with {
+      midiInstrument = "overdriven guitar"
       instrumentName = "Guitar"
     } { \clef "treble_8" \guitar-tabbed}
     \new TabStaff \with {
       stringTunings = #guitar-tuning
     }{\guitar-tabbed}
     \new Staff \with {
+      midiInstrument = "percussive organ"
       instrumentName = "Bass"
     } { \left }
   >>
-  \layout {
-   \override Score.NonMusicalPaperColumn.padding = #1
-   \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.basic-distance = #1
-   \override VerticalAxisGroup.nonstaff-nonstaff-spacing.basic-distance = #5
-
-  }
-  \midi { }
+  \layout { }
+  \midi { \tempo 4 = 120 }
 }

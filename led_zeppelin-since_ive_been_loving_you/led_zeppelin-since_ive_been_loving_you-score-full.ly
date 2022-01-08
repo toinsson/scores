@@ -14,23 +14,23 @@
 \score {
   <<
     \new ChordNames \chordNames
-    \new Staff \with { 
+    \new Staff \with {
+      midiInstrument = "overdriven guitar"
       instrumentName = "Guitar"
     } { \clef "treble_8" \guitar}
     \new Staff \with {
+      midiInstrument = "marimba"
       instrumentName = "Voice"
     } \lyricsong 
     \new Lyrics \lyricsto melody \words
-    \new PianoStaff \with { instrumentName = "Keys" } <<
+    \new PianoStaff \with {
+      midiInstrument = "percussive organ"
+      instrumentName = "Keys"
+    } <<
       \new Staff  { \right }
       \new Staff { \left }
     >>
   >>
-  \layout {
-   \override Score.NonMusicalPaperColumn.padding = #1
-   \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.basic-distance = #1
-   \override VerticalAxisGroup.nonstaff-nonstaff-spacing.basic-distance = #5
-
-  }
-  \midi { }
+  \layout { }
+  \midi { \tempo 4 = 120 }
 }
