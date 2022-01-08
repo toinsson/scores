@@ -6,7 +6,7 @@ This is an attempt to transcribe the song from the "III" album version.
 
 It should be _relatively_ faithful until the guitar solo, after which the added backing guitar (and shredding volume of the lead guitar) made it hard to hear the keyboardist. So the keyboard accompaniement after that is very approximate, though the bassline may be closer. Overall the guitar and singing should be closest to the original.
 
-Tempo is not indicated but varies, starting round 120 BPM and slowing down quite a bit during the singing parts.
+Tempo is not indicated but varies between something like 120 and 110 BPM, it slows down in particular during the last chord progression of the chart.
 
 
 ## Typesetting
