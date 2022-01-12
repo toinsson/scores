@@ -121,7 +121,11 @@ jazzGuitar = \relative c' {
                         \chordmode { f:7 }
                         #guitar-tuning
                         "8-2;x;7-1;8-3;x;x;"
-    \new FretBoards \chordNames
+    \new FretBoards {
+      \override FretBoard.fret-diagram-details.number-type = #'arabic
+      \override FretBoard.size = #'1.5
+      \chordNames
+    }
 
   \new StaffGroup \with {
     \consists "Instrument_name_engraver"

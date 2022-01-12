@@ -12,7 +12,11 @@
 \score {
   <<
     \new ChordNames \chordNames
-    \new FretBoards \chordNames
+    \new FretBoards {
+      \override FretBoard.fret-diagram-details.number-type = #'arabic
+      \override FretBoard.size = #'1.5
+      \chordNames
+    }
     \new Staff \with {
       midiInstrument = "overdriven guitar"
       instrumentName = "Guitar"
