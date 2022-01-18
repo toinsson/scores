@@ -22,3 +22,12 @@ Currently there are three example versions:
 * `led_zeppelin-since_ive_been_loving_you-score-tabs_bass.ly` : contains lead guitar with tablatures and bassline
 
 Unfortunately the guitar part is currently duplicated because `\set TabStaff` commands induce ghost tablatures even when the score does not include tablatures. Hopefully we can find some mechanism to avoid this.
+
+
+## Drum track
+
+A [Hydrogen](http://hydrogen-music.org/features/) drum track is available: `led_zeppelin-since_ive_been_loving_you-drums.h2song`.
+
+It uses the [JazzFunkKit](https://www.orangetreesamples.com/blog/free-jazz-funk-drum-sample-library) drum set (available for import within Hydrogen).
+
+It currently plays at a fixed 120 BPM and is close but in no way identical to the drumming on "III".
