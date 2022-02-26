@@ -2,7 +2,7 @@
 
 ## Transcription
 
-Chords, fretboards and lyrics adapted from a Brazilian magazine.
+Chords, fretboards and lyrics adapted from the "Arquivo de Música" Nº14 magazine.
 
 Melody transcribed from the 1978 recording, rhythm is approximate.
 
@@ -14,3 +14,12 @@ The score is written in the [Lilypond](https://lilypond.org) format and can be t
 There is one score:
 
 * `chico_buarque-apesar_de_voce-leadsheet.ly`: a leadsheet
+
+
+## Drum track
+
+A [Hydrogen](http://hydrogen-music.org/features/) drum track is available: `chico_buarque-apesar_de_voce.h2song`.
+
+It uses the [Erny's percussions](http://prdownloads.sf.net/hydrogen/ErnysPercussion.h2drumkit) drum set (available for import within Hydrogen).
+
+It is loosely based on the 1978 recording, with some probabilistic beats.
