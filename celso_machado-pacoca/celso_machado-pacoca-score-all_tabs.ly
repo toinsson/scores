@@ -17,10 +17,11 @@ global = {
 chordsPart = \new ChordNames \chordNames
 
 tunePart = \new Staff \with { 
-	midiInstrument = "acoustic guitar (nylon)"
-	instrumentName = "Guitar" }
+  midiInstrument = "acoustic guitar (nylon)"
+  instrumentName = "Guitar" }
   << \global \clef "treble_8" \tempo "Larghetto" 4 = 48 \tabtune >>
 
+\layout { \omit Voice.StringNumber }
 guitarPart = \new Staff \with {
   midiInstrument = "acoustic guitar (nylon)"
   instrumentName = "Guitar"

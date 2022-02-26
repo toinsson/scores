@@ -147,7 +147,7 @@ tabcompA = \relative c {
   a,16 <a' c e>8 q16 r4
   cis,16 <g' e' a>8 q16 e'4
   d,16 <a' d f>8 q16 r4
-  gis,16 <f' b e>8 q16
+  gis,16 <f'\4 b\3 e\2>8 <f\4 b\3 e\2>16
   e,16 <d' gis d'> fis, gis
   a16 <a' c e>8 q16 g,16 <a' c e>8 q16
   }
@@ -166,7 +166,7 @@ tabcompA = \relative c {
   
   R2
   R2
-  r4 gis,16 <f' b e>8 q16
+  r4 gis,16 <f'\4 b\3 e\2>8 <f\4 b\3 e\2>16
   a,16 <a' c e>8 q16 c,16 q8 q16
   d16 <a' d f>8 q16 f16 q8 q16
   e16 <a c e>8 q16 c,16 q8 q16
@@ -174,7 +174,7 @@ tabcompA = \relative c {
   b16 <f' a d>8 q16 <gis b e>4
   R2
   R2
-  r4 gis,16 <f' b e>8 q16
+  r4 gis,16 <f'\4 b\3 e\2>8 <f\4 b\3 e\2>16
   a,16 <a' c e>8 q16 c,16 q8 q16
   d16 <a' d f>8 q16 f16 q8 q16
   e16 <a c e>8 q16 r4

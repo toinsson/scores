@@ -14,8 +14,8 @@ global = {
 \include "celso_machado-pacoca-comp.ly"
 
 tunePart = \new Staff \with { 
-	midiInstrument = "flute"
-	instrumentName = "Flute" }
+  midiInstrument = "flute"
+  instrumentName = "Flute" }
   << \global \clef treble \tempo "Larghetto" 4 = 48 \tune >>
 
 guitarPart = \new Staff \with {

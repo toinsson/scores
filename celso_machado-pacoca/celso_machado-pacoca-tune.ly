@@ -73,8 +73,8 @@ tabtune = \relative c {
   \repeat volta 2 {
   e16 c a e' d e c' b
   e,4 r
-  r16 e a e cis e bes' a
-  g8. f16~ f4
+  r16 e a e cis\3 e bes' a
+  g8.\2 f16~\2 f4
   r16 b, d b gis b f' e
   d8. c16~ c4
   }
