@@ -16,15 +16,15 @@ global = {
 tunePart = \new Staff \with { 
   midiInstrument = "flute"
   instrumentName = "Flute" }
-  << \global \clef treble \tempo "Larghetto" 4 = 48 \tune >>
+  << \global \clef treble \tempo "Larghetto" 4 = 48 \removeWithTag #'tabs \relative c' \tune >>
 
 guitarPart = \new Staff \with {
   midiInstrument = "acoustic guitar (nylon)"
   instrumentName = "Guitar"
   \consists "Merge_rests_engraver"
 } << \global \clef "treble_8"
-     \new Voice = "upper" \compA
-     \new Voice = "lower" \compB
+     \new Voice = "upper" \removeWithTag #'tabs \compA
+     \new Voice = "lower" \removeWithTag #'tabs \compB
 >>
 
 \score {

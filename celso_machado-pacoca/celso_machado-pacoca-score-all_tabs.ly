@@ -19,26 +19,25 @@ chordsPart = \new ChordNames \chordNames
 tunePart = \new Staff \with { 
   midiInstrument = "acoustic guitar (nylon)"
   instrumentName = "Guitar" }
-  << \global \clef "treble_8" \tempo "Larghetto" 4 = 48 \tabtune >>
+  << \global \clef "treble_8" \tempo "Larghetto" 4 = 48 \removeWithTag #'tabs \relative c \tune >>
 
-\layout { \omit Voice.StringNumber }
 guitarPart = \new Staff \with {
   midiInstrument = "acoustic guitar (nylon)"
   instrumentName = "Guitar"
   \consists "Merge_rests_engraver"
 } << \global \clef "treble_8"
-     \new Voice = "upper" \tabcompA
-     \new Voice = "lower" \tabcompB
+     \new Voice = "upper" \removeWithTag #'tabs \compA
+     \new Voice = "lower" \removeWithTag #'tabs \compB
 >>
 
 tunetabsPart = \new TabStaff \with {
       stringTunings = #guitar-tuning
-    } {\tabtune}
+    } {\removeWithTag #'plain \tune}
 
 comptabsPart = \new TabStaff \with {
       stringTunings = #guitar-tuning
-    } << \new TabVoice = "upper" \tabcompA
-         \new TabVoice = "lower" \tabcompB
+    } << \new TabVoice = "upper" \removeWithTag #'plain \compA
+         \new TabVoice = "lower" \removeWithTag #'plain \compB
          >>
          
 \include "predefined-guitar-fretboards.ly"

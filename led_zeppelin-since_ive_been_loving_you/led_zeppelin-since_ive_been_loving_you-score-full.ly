@@ -1,3 +1,5 @@
+\version "2.22.1"
+
 \include "led_zeppelin-since_ive_been_loving_you-global.ly"
 \include "led_zeppelin-since_ive_been_loving_you-chords.ly"
 \include "led_zeppelin-since_ive_been_loving_you-guitar.ly"
@@ -17,7 +19,7 @@
     \new Staff \with {
       midiInstrument = "overdriven guitar"
       instrumentName = "Guitar"
-    } { \clef "treble_8" \guitar}
+    } { \clef "treble_8" \removeWithTag #'tabs \guitar}
     \new Staff \with {
       midiInstrument = "marimba"
       instrumentName = "Voice"

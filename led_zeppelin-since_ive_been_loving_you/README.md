@@ -21,8 +21,6 @@ Currently there are three example versions:
 * `led_zeppelin-since_ive_been_loving_you-score-tabs.ly` : contains lead guitar with tablatures
 * `led_zeppelin-since_ive_been_loving_you-score-tabs_bass.ly` : contains lead guitar with tablatures and bassline
 
-Unfortunately the guitar part is currently duplicated because `\set TabStaff` commands induce ghost tablatures even when the score does not include tablatures. Hopefully we can find some mechanism to avoid this.
-
 
 ## Drum track
 

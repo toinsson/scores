@@ -1,3 +1,5 @@
+\version "2.22.1"
+
 \include "led_zeppelin-since_ive_been_loving_you-global.ly"
 \include "led_zeppelin-since_ive_been_loving_you-chords.ly"
 \include "led_zeppelin-since_ive_been_loving_you-guitar.ly"
@@ -20,10 +22,10 @@
     \new Staff \with {
       midiInstrument = "overdriven guitar"
       instrumentName = "Guitar"
-    } { \clef "treble_8" \guitar-tabbed}
+    } { \clef "treble_8" \guitar}
     \new TabStaff \with {
       stringTunings = #guitar-tuning
-    }{\guitar-tabbed}
+    }{\guitar}
   >>
   \layout { }
   \midi { \tempo 4 = 120 }
