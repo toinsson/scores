@@ -14,40 +14,48 @@ chordNames = \chordmode {
   \global
   \set chordChanges = ##t
   % Chords follow here.
-  \partial 4 g4:7
-  d2:maj g:7 d:maj g:7 d:maj g:7 d:maj g:7
+  \partial 4 a4:7.13-
+  d2:6.9 a:7.13- d:6.9 a:7.13-
+  d:6.9 a:7.13- d:6.9 g4:7 fis:7
   \bar "||"
-  b2:m fis/ais fis:m7.5- b:7
-  e:9 a:7 d:maj fis:aug7
-  b2:m fis/ais fis1:m7.5- q b:7
-  e2:9 a:7 d:maj g:m
-  d:maj g:m6 d:7/a d:7
-  g:maj fis:7 b:m d/c
-  e:7 a:7 d:maj a:aug7
-  d1:maj q q2 b2:9- e1:m a:7
-  e:m a:7 e2:m fis:7
-  b1:7 q q2 b:aug7 e1:m/b g:m/bes
+  b2:m7 ais:dim fis:m7.5- b:9-
+  e:9 a:7 d:6.9 fis:7.13-
+  b2:m7 ais:dim fis1:m7.5- q
+  b2:sus4.9- b:7.9- e2:9 a:7
+  d:6/fis g:m6 d:6/fis g:m6
+  a:m6 d:9 g:maj fis:7
+  b:sus4.7 c:m6 e:7 a:7
+  d2:6.9 a4:7.13 a:7.13-
+  d1:6.9 q q2 b2:9-
+  e1:m7 a:7 e:m7 a:7
+  cis2:m7.5- fis:7.13- b1:7.9- q
+  q2 c:m6 e1:m7/b g:m6/bes
   b2/a b:7 e:9 a:7
-  d:maj fis:aug7 b:m fis/ais
-  fis:m7.5- b:7 e:9 a:7
-  d:maj fis:aug7 b:m fis/ais
-  fis1:m7.5- q b:7 e2:9 a:7
-  d2.:maj g4:m6 d2:maj g:m6
-  d:7/a d:7 g:maj fis:7
-  b:m d/c e:9 a:7
-  d:maj a:aug7 d1:maj q b:9-
-  e:m a:7 e:m a:7
-  e2:m fis:7 b1:7 q q2 b:aug7
-  e1:m/b g:m/bes b2/a b:7
-  e:9 a:7 d2:maj a2:aug7
-  d1:maj q q2 b:9- e1:m a:7
-  e:m a:7 e2:m fis:7
-  b1:7 q q b4:aug7 e2.:m/b g1:m/bes
+  d:6.9 fis:7.13-
+  \bar "||"
+  b2:m7 ais:dim fis:m7.5- b:7.9-
+  e2:9 a:7 d:6.9 fis:7.13-
+  b2:m7 ais:dim fis1:m7.5- q
+  b2:sus4.9- b:7.9- e2:9 a:7
+  d2.:6/fis g4:m6 d2:6/fis g:m6
+  a:m6 d:9 g:maj fis:7
+  b:sus4.7 c:m6 e:9 a:7
+  d:6.9 a4:7.13 a:7.13- d1:6.9 q b:9-
+  e:m7 a:7 e:m7 a:7
+  cis2:m7.5- fis:7.13- b1:7.9- q
+  q2 c:m6 e1:m7/b g:m6/bes
   b2/a b:7 e:9 a:7
-  d:maj a:aug7 d1:maj q q2 b:9-
-  e1:m a:7 e:m a:7
-  e2:m fis:m b1:7 q q2 b:aug7
-  e1:m
+  d2:6.9 a4:7.13 a:7.13-
+  \bar "||"
+  d1:6.9 q q2 b:9- e1:m7 a:7
+  e:m7 a:7 cis2:m7.5- fis:7.13-
+  b1:7.9- q q c4:m6 e2.:m7/b g1:m6/bes
+  b2/a b:7 e:9 a:7
+  d2:6.9 a4:7.13 a:7.13- d1:6.9
+  q q2 b:9-
+  e1:m7 a:7 e:m7 a:7
+  cis2:m7.5- fis:7.13- b1:7.9- q
+  q2 c:m6 e1:m7/b
 }
 
 melody = \relative c' {
@@ -228,69 +236,105 @@ verse = \lyricmode {
     \new ChordNames \chordNames
     \include "predefined-guitar-fretboards.ly"
       \storePredefinedDiagram #default-fret-table
-                        \chordmode { fis/ais }
+                        \chordmode { a:7.13- }
                         #guitar-tuning
-                        "x;1-1;x;3-4;2-2;2-3;"
+                        "x;o;5-1;6-3;6-4;x;"
       \storePredefinedDiagram #default-fret-table
-                        \chordmode { fis:m7.5- }
+                        \chordmode { a:7.13 }
                         #guitar-tuning
-                        "2-2;x;2-3;2-4;1-1;x;"
+                        "x;o;5-1;6-3;7-4;x;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { a:m6 }
+                        #guitar-tuning
+                        "5-2;x;4-1;5-3;5-4;x;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { ais:dim }
+                        #guitar-tuning
+                        "x;1-1;2-2;o;2-3;o;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { b/a }
+                        #guitar-tuning
+                        "x;o;4-2;4-3;4-4;x;"
       \storePredefinedDiagram #default-fret-table
                         \chordmode { b:7 }
                         #guitar-tuning
-                        "x;2-1-(;4-3;2-1;4-4;2-1-);"
-      \storePredefinedDiagram #default-fret-table
-                        \chordmode { e:9 }
-                        #guitar-tuning
-                        "x;x;2-2;1-1;3-4;2-3;"
-      \storePredefinedDiagram #default-fret-table
-                        \chordmode { fis:aug7 }
-                        #guitar-tuning
-                        "2-1;x;2-2;3-3;3-4;x;"
-      \storePredefinedDiagram #default-fret-table
-                        \chordmode { g:m6 }
-                        #guitar-tuning
-                        "3-2;x;2-1;3-3;3-4;x;"
-      \storePredefinedDiagram #default-fret-table
-                        \chordmode { d:7/a }
-                        #guitar-tuning
-                        "5-3;x;4-2;5-4;3-1;x;"
-      \storePredefinedDiagram #default-fret-table
-                        \chordmode { d:7 }
-                        #guitar-tuning
-                        "x;5-3;4-2;5-4;3-1;x;"
-      \storePredefinedDiagram #default-fret-table
-                        \chordmode { g:maj }
-                        #guitar-tuning
-                        "3-1;x;4-3;4-4;3-2;x;"
-      \storePredefinedDiagram #default-fret-table
-                        \chordmode { fis:7 }
-                        #guitar-tuning
-                        "2-1;x;2-2;3-4;2-3;x;"
-      \storePredefinedDiagram #default-fret-table
-                        \chordmode { d/c }
-                        #guitar-tuning
-                        "x;3-2;4-4;2-1;3-3;x;"
-      \storePredefinedDiagram #default-fret-table
-                        \chordmode { a:aug7 }
-                        #guitar-tuning
-                        "x;o;2-2;o;2-3;1-1;"
+                        "x;2-2;1-1;2-3;o;o;"
       \storePredefinedDiagram #default-fret-table
                         \chordmode { b:9- }
                         #guitar-tuning
                         "x;2-3;1-1;2-4;1-2;x;"
       \storePredefinedDiagram #default-fret-table
-                        \chordmode { b:aug7 }
+                        \chordmode { b:sus4.9- }
                         #guitar-tuning
-                        "x;2-1-(;4-3;4-4;2-1-);3-2;"
+                        "x;2-2;2-3;2-4;1-1;o;"
       \storePredefinedDiagram #default-fret-table
-                        \chordmode { g:m/bes }
+                        \chordmode { b:sus4.7 }
                         #guitar-tuning
-                        "x;1-1;o;o;3-4;x;"
+                        "x;2-2;2-3;2-4;o;o;"
       \storePredefinedDiagram #default-fret-table
-                        \chordmode { b/a }
+                        \chordmode { c:m6 }
                         #guitar-tuning
-                        "o;5-2;4-1-(;4-1;4-1-);x;"
+                        "x;3-3;1-1-(;2-2;1-1-);x;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { cis:m7.5- }
+                        #guitar-tuning
+                        "x;4-1;5-3;4-2;5-4;x;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { d:9 }
+                        #guitar-tuning
+                        "x;5-2;4-1;5-3;5-4;x;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { d/c }
+                        #guitar-tuning
+                        "x;3-2;4-4;2-1;3-3;x;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { d:6.9 }
+                        #guitar-tuning
+                        "x;5-2;4-1-(;4-1;5-3-);x;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { d:6/fis }
+                        #guitar-tuning
+                        "2-2;x;o;2-3;o;x;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { e:9 }
+                        #guitar-tuning
+                        "o;x;x;1-1;3-3;2-2;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { e:m7 }
+                        #guitar-tuning
+                        "o;2-1;2-2;o;3-4;o;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { e:m7/b }
+                        #guitar-tuning
+                        "x;2-1;2-2;o;3-4;o;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { fis:m7.5- }
+                        #guitar-tuning
+                        "2-2;x;2-3;2-4;1-1;x;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { fis:7.13- }
+                        #guitar-tuning
+                        "2-1-(;x;o;3-2;3-3;2-1-);"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { fis:7 }
+                        #guitar-tuning
+                        "2-1;x;2-2;3-4;2-3;x;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { g:m6 }
+                        #guitar-tuning
+                        "3-2;x;2-1;3-3;3-4;x;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { g:m6/bes }
+                        #guitar-tuning
+                        "x;1-1;2-2;o;3-4;o;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { g:maj }
+                        #guitar-tuning
+                        "3-1;x;4-3;4-4;3-2;x;"
+      \storePredefinedDiagram #default-fret-table
+                        \chordmode { g:7 }
+                        #guitar-tuning
+                        "3-1;x;3-2;4-4;3-3;x;"
     \new FretBoards {
       \override FretBoard.fret-diagram-details.number-type = #'arabic
       \override FretBoard.size = #'1.2

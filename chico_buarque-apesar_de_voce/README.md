@@ -2,9 +2,9 @@
 
 ## Transcription
 
-Chords, fretboards and lyrics adapted from the "Arquivo de Música" Nº14 magazine.
+Chords and fretboards from the [this online guitar tutorial](https://www.youtube.com/watch?v=f1TcGd1G0Js).
 
-Melody transcribed from the 1978 recording, rhythm is approximate.
+Melody transcribed from the 1978 recording, rhythm is approximate, omitting claves.
 
 
 ## Typesetting
