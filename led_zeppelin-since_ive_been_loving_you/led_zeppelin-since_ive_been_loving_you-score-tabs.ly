@@ -10,6 +10,7 @@
   subsubtitle = "Guitar tablatures"
   composer = "Led Zeppelin"
 }
+\layout { \omit Voice.StringNumber }
 
 \score {
   <<
@@ -22,10 +23,10 @@
     \new Staff \with {
       midiInstrument = "overdriven guitar"
       instrumentName = "Guitar"
-    } { \clef "treble_8" \guitar}
+    } { \clef "treble_8" \removeWithTag #'plain \guitar}
     \new TabStaff \with {
       stringTunings = #guitar-tuning
-    }{\guitar}
+    }{\removeWithTag #'plain \guitar}
   >>
   \layout { }
   \midi { \tempo 4 = 120 }

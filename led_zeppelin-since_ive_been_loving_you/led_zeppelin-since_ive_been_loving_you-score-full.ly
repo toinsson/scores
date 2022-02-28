@@ -16,15 +16,18 @@
 \score {
   <<
     \new ChordNames \chordNames
-    \new Staff \with {
+    \new TabStaff \with {
       midiInstrument = "overdriven guitar"
       instrumentName = "Guitar"
-    } { \clef "treble_8" \removeWithTag #'tabs \guitar}
+    } { \tabFullNotation \clef "treble_8" \removeWithTag #'plain \guitar}
+
     \new Staff \with {
       midiInstrument = "marimba"
       instrumentName = "Voice"
     } \lyricsong 
+
     \new Lyrics \lyricsto melody \words
+
     \new PianoStaff \with {
       midiInstrument = "percussive organ"
       instrumentName = "Keys"

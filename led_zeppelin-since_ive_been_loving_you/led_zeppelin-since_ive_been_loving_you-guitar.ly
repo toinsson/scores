@@ -7,23 +7,27 @@ guitar = {
  g4 \bar "|" c bes g
  \cadenzaOff
  \bar "|"
- c2.~ | c~ | c~ | c8 ees d c d ees
- d c aes d \tuplet 3/2 { c aes aes~ } | aes4. g8 f4 | r r d8 ees | f d ees c \tuplet 3/2 { bes g f }
- ees4 c'2 | R2. | R2. | \tuplet 3/2 { ees8 d c } d8 ees f4
- \slashedGrace f8 g2.~ | g | g16 g8.~ g2~ | g 
- \tag #'tabs { \set TabStaff.minimumFret = #12 }
- \ottava #1 ees'8 f
- g16 f ees f16 \tuplet 3/2 { g8 f ees } f8 f8 | c2.~ | c2~ c8 f16 g
- f16 ees16 f8 g f ees f | c2.~ | c2 \ottava #0 \grace g8\glissando bes4 | 
+ c2.~ | c~ | c~ |
+ c8 ees d c d ees d c aes d \tuplet 3/2 { c aes aes~ } | aes4. g8 f4 |
+
+ \tag #'tabs  { r r d8 ees | f d ees c \tuplet 3/2 { bes g f } ees4\5 c'2 | R2. | R2. |}
+ \tag #'plain { r r d8 ees | f d ees c \tuplet 3/2 { bes g f } ees4 c'2 | R2. | R2. | }
+
+ \tuplet 3/2 { ees8 d c } d8 ees f4 \slashedGrace f8 g2.~ | g | g16 g8.~ g2~ | g
+ \tag #'tabs { \set TabStaff.minimumFret = #11 }
+ \ottava #1 ees'8 f g16 f ees f16 \tuplet 3/2 { g8 f ees } f8 f8 | c2.~ |
+ c2~ c8 f16 g f16 ees16 f8 g f ees f | c2.~ |
+ c2 \ottava #0 \grace g8\2\glissando bes4 | g8 r r4 r8
  \tag #'tabs { \set TabStaff.minimumFret = #7 }
- g8 r r4 r8 f16 g
- c bes g ges f ees c8 f16 c8. | ees16 d c8~ c bes~ bes4 | r ees16 d c8 bes4~ | bes2 ees16 d c8
- d8 ees16 f~ f8 g \tuplet 3/2 { bes c c } | c4. f,16 g \ottava #1 ees'8 f | g f16 ees f8 g g4~ | g2. \ottava #0
- r | \tuplet 3/2 { bes,16 g f bes g f } g16 g8.~ g4~ | g16 g bes d f8 g4 g8~ | g2.
- r4 aes, bes | c2 ees4 | c4. ees8 bes4 | \ottava #1 g'2 g4 | f2 g4
- ees8 c4. \ottava #0 r4 | R2. | R2. | R2.
- \tag #'tabs { \set TabStaff.minimumFret = #8 }
- <c,, fis>8 c' r8 a d4 | <c, fis c'>2 fis4 | <des f>8 c' r8 aes d4 | <des, f c'>2.
+ f16 g c bes g ges\3 f ees c8 f16 c8. | ees16 d c8~ c bes~ bes4 | r ees16 d c8 bes4~ | bes2
+ ees16 d c8 d8 ees16 f~ f8 g\3 \tuplet 3/2 { bes\2 c\2 c\2 } | c4.\2
+ f,16 g \ottava #1 ees'8 f | g f16 ees f8 g g4~ | g2. \ottava #0 r |
+ \tuplet 3/2 { bes,16 g f bes g f } g16 g8.~ g4~ | g16 g bes d\2 f8 g4 g8~ | g2. |
+ r4 aes,\3 bes\2 | c2\2 ees4 | c4.\2 ees8 bes4 | \ottava #1 g'2 g4 | f2 g4 ees8 c4.\2 \ottava #0 r4 |
+ R2. | R2. |
+
+ \tag #'tabs { \set TabStaff.minimumFret = #3 }
+ <bes,,\6 g'>4 r4 r4 | <a fis'>8 c' r8 a, cis'4 | c2 <a, fis'>4 | <gis f'>8 c' r8 aes d4 | <des, f c'>2.
  \tag #'tabs { \set TabStaff.minimumFret = #0 }
  R2. | R2. | R2. | r4 <c' ees> q | <f, aes>2.
  \tag #'tabs { \set TabStaff.minimumFret = #6 }
