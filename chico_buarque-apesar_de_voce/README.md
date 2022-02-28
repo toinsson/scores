@@ -1,8 +1,8 @@
-# Chico Buarque - Apesar de você
+# Chico Buarque - Apesar de Você
 
 ## Transcription
 
-Chords and fretboards from the [this online guitar tutorial](https://www.youtube.com/watch?v=f1TcGd1G0Js).
+Chords and fretboards from [this online guitar tutorial](https://www.youtube.com/watch?v=f1TcGd1G0Js).
 
 Melody transcribed from the 1978 recording, rhythm is approximate, omitting claves.
 

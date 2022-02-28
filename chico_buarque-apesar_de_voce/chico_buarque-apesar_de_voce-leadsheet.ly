@@ -171,7 +171,7 @@ verse = \lyricmode {
   Fa -- lou, tá fa -- la -- do,
   não tem dis -- cus -- são, não.
   A mi -- nha gente ho -- je an -- da
-  fa -- la -- ndo de la -- do'e o -- lha -- ndo pro chão, viu.
+  fa -- la -- ndo de la -- do'e o -- lha -- ndo pro chão, viu?
   Vo -- cê que'in -- ven -- tou es -- se'es -- ta -- do
   e'in -- ven -- tou de'in -- ven -- tar
   to -- da a'es -- cu -- ri -- dão.
