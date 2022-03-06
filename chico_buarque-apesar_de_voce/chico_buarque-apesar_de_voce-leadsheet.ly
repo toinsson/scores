@@ -337,7 +337,9 @@ verse = \lyricmode {
                         "3-1;x;3-2;4-4;3-3;x;"
     \new FretBoards {
       \override FretBoard.fret-diagram-details.number-type = #'arabic
-      \override FretBoard.size = #'1.2
+      \override FretBoard.fret-diagram-details.finger-code = #'in-dot
+      \override FretBoard.fret-diagram-details.dot-color = #'white
+      \override FretBoard.size = #'1.4
       \chordNames }
     \new Staff { \melody }
     \addlyrics { \verse }
